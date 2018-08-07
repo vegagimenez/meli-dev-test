@@ -9,7 +9,6 @@
     <packaging>pom</packaging>
     <name>DNA Parent</name>
     <modules>
-        <module>dna-service</module>
         <module>dna-checker</module>
     </modules>
 
