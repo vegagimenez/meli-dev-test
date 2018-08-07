@@ -1,0 +1,20 @@
+spring.datasource.jndi-name: jdbc/dnaDB
+
+# Driver MYSQL Server
+jdbcDriver: com.mysql.jdbc.Driver
+jdbcUrl: jdbc:mysql://localhost:3306/dnaDB?serverTimezone=ART&useSSL=false
+#jdbcUrl: jdbc:mysql://pladb.csblaweimog6.sa-east-1.rds.amazonaws.com:3306/plaDB?serverTimezone=ART&useSSL=false
+jdbcUser: dnadb
+jdbcPass: +dnaDB1472+
+
+
+
+# hibernate config to connect to MYSQL
+#validate | update | create | create-drop
+hibernate.hbm2ddl.auto: create
+hibernate.dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+hibernate.show_sql: true
+connection.pool_size: 5
+
+#LOGGIN
+logging.config: classpath:config/log4j.properties
