@@ -23,7 +23,7 @@ import com.meli.dna.ICfgDNA;
 @Log4j2
 @Configuration
 @EnableJpaRepositories(
-//	    basePackages = "com.meli.dna.dao", 
+	    basePackages = "com.meli.dna.dao", 
 	    entityManagerFactoryRef = "entityManager", 
 	    transactionManagerRef = "transactionManager"
 )

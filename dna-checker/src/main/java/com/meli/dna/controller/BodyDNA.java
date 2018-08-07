@@ -1,4 +1,4 @@
-package com.meli.dna.service;
+package com.meli.dna.controller;
 
 public class BodyDNA {
 
