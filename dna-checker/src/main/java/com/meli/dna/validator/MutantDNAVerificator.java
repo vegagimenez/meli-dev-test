@@ -52,7 +52,7 @@ public class MutantDNAVerificator {
                 e.printStackTrace();
             } 
         }   
-        
+		executor.shutdown();
 		return (result > 1)?Boolean.TRUE:Boolean.FALSE;
 	}
 }
