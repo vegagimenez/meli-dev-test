@@ -24,5 +24,8 @@ public class DNA implements Serializable {
 	protected Long id;
 	
 	@Column(nullable = false, unique = true)
-	private String[] chain;
+	private String chain;
+	
+	@Column(nullable = false)
+	private boolean isMutant;
 }

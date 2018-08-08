@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import com.meli.dna.dao.DNARepo;
 import com.meli.dna.model.DNA;
+import com.meli.dna.model.Stats;
 
 @Transactional
 @Service
@@ -27,6 +28,11 @@ public class MutantServiceImpl implements MutantService {
 			log.info("Exception saving dna.");
 			e.printStackTrace();
 		}
+	}
+
+	@Override
+	public Stats getStats() {
+		return repo.getStats();
 	}
 
 }
