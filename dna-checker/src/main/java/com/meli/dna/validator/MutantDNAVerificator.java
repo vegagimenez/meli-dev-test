@@ -25,7 +25,7 @@ public class MutantDNAVerificator {
 	
 	public boolean isMutant(String[] dnaChain){
 		
-		ExecutorService executor = Executors.newFixedThreadPool(4);
+		ExecutorService executor = Executors.newCachedThreadPool();
 		List<Future<Integer>> futures = new ArrayList<Future<Integer>>();
 		
 		IFinderWorker adenineWorker = new AdenineFinderWorker(dnaChain);
